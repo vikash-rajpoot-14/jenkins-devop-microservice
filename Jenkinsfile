@@ -21,18 +21,23 @@ node {
 // DECLARATIVE PIPELINE
 
 pipeline {
-	agents any
+	agent any
 	stages {
 		stage ('Build'){
-	       echo "Build"
+			stpes {
+              echo "Build"
+			}
+	       
 		}
-
 		stage ('Test'){
-		   echo "Test"
+			stpes {
+              echo "Test"
+			}
 		}
-
 		stage ('Integration Test'){
-		   echo "Integration Test"
+			stpes {
+              echo "Integration Test"
+			}
 		}
 	}
 }
