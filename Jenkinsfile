@@ -24,18 +24,18 @@ pipeline {
 	agent any
 	stages {
 		stage ('Build'){
-			stpes {
+			steps {
               echo "Build"
 			}
 	       
 		}
 		stage ('Test'){
-			stpes {
+			steps {
               echo "Test"
 			}
 		}
 		stage ('Integration Test'){
-			stpes {
+			steps {
               echo "Integration Test"
 			}
 		}
